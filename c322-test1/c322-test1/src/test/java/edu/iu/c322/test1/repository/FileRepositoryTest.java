@@ -55,6 +55,12 @@ class FileRepositoryTest {
         addToDB(q);
     }
 
+    void addQuestion4()
+    {
+        Question q = new Question(1,"Which word matches the image?", "tiger", new String[]{"lion, tiger, bear"});
+        addToDB(q);
+    }
+
     void addToDB(Question question) {
         FileRepository fileRepository = new FileRepository();
         boolean result = false;
